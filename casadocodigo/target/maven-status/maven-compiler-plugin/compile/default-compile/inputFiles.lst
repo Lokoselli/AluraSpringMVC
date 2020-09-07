@@ -1,4 +1,6 @@
+/workspace/AluraSpringMVC/casadocodigo/src/main/java/br/com/casadocodigo/loja/models/TipoPreco.java
 /workspace/AluraSpringMVC/casadocodigo/src/main/java/br/com/casadocodigo/loja/conf/ServletSpringMVC.java
+/workspace/AluraSpringMVC/casadocodigo/src/main/java/br/com/casadocodigo/loja/models/Preco.java
 /workspace/AluraSpringMVC/casadocodigo/src/main/java/br/com/casadocodigo/loja/models/Produto.java
 /workspace/AluraSpringMVC/casadocodigo/src/main/java/br/com/casadocodigo/loja/controllers/HomeController.java
 /workspace/AluraSpringMVC/casadocodigo/src/main/java/br/com/casadocodigo/loja/conf/AppWebConfiguration.java

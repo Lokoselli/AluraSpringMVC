@@ -3,14 +3,14 @@ package br.com.casadocodigo.loja.models;
 import java.math.BigDecimal;
 
 import javax.persistence.Embeddable;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+// import javax.persistence.EmbeddedId;
+// import javax.persistence.GeneratedValue;
+// import javax.persistence.GenerationType;
+
 
 @Embeddable
 public class Preco {
 
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private BigDecimal preco;
     private TipoPreco tipo;
