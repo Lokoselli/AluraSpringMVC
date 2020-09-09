@@ -3,24 +3,20 @@ package br.com.casadocodigo.loja.models;
 import java.math.BigDecimal;
 
 import javax.persistence.Embeddable;
-// import javax.persistence.EmbeddedId;
-// import javax.persistence.GeneratedValue;
-// import javax.persistence.GenerationType;
 
 
 @Embeddable
 public class Preco {
 
-    private Integer id;
-    private BigDecimal preco;
+    private BigDecimal valor;
     private TipoPreco tipo;
 
-    public BigDecimal getPreco() {
-        return preco;
+    public BigDecimal getValor() {
+        return valor;
     }
 
-    public void setPreco(BigDecimal preco) {
-        this.preco = preco;
+    public void setValor(BigDecimal valor) {
+        this.valor = valor;
     }
 
     public TipoPreco getTipo() {
@@ -30,14 +26,5 @@ public class Preco {
     public void setTipo(TipoPreco tipo) {
         this.tipo = tipo;
     }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
     
 }

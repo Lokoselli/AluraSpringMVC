@@ -19,13 +19,19 @@
             <label>Descrição</label>
             <textarea rows="10" cols="20" name="descricao"></textarea>
         </div>
+        <div>
+			<label>Paginas</label>
+			<input type="text" name="paginas">
+        </div>
+
         <c:forEach items="${tipos}" var="tipoPreco" varStatus="status">
             <div>
                 <label>${tipoPreco}</label>
                 <input type="text" name="precos[${status.index}].valor">
-                <input type="hidden" name="precos[${status.index}].tipo">
+                <input type="hidden" name="precos[${status.index}].tipo" value="${tipoPreco}">
             </div>
         </c:forEach>
+        
         <button type="submit">Cadastrar</button>
 	</form>
 </body>
