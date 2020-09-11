@@ -22,6 +22,7 @@
                 <td>${produto.titulo}</td>
                 <td>${produto.descricao}</td>
                 <td>${produto.paginas}</td>
+                <td><a href="produtos/detalhe?id=${produto.id}">detalhe</a></td>
             </tr>
         </c:forEach>
     </table>
