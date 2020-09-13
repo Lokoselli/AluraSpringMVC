@@ -5,4 +5,4 @@ USER root
 RUN apt-get update && \
       apt-get -y install sudo
       
-RUN sudo snap install --classic heroku
+RUN curl https://cli-assets.heroku.com/install.sh | sh
