@@ -1,5 +1,14 @@
 package br.com.casadocodigo.loja.conf;
 
+import java.util.concurrent.TimeUnit;
+
+import com.github.benmanes.caffeine.cache.Caffeine;
+import com.google.common.cache.CacheBuilder;
+
+import org.springframework.cache.CacheManager;
+import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.cache.caffeine.CaffeineCacheManager;
+import org.springframework.cache.concurrent.ConcurrentMapCacheManager;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -21,6 +30,7 @@ import br.com.casadocodigo.loja.models.CarrinhoCompras;
 @EnableWebMvc
 @Configuration
 @ComponentScan(basePackageClasses = {HomeController.class, ProdutoDAO.class, FileSaver.class, CarrinhoCompras.class})
+@EnableCaching
 public class AppWebConfiguration implements WebMvcConfigurer{
 
     @Bean
@@ -58,6 +68,20 @@ public class AppWebConfiguration implements WebMvcConfigurer{
     @Bean
     public RestTemplate restTemplate(){
         return new RestTemplate();
+    }
+
+    @Bean
+    public CacheManager cacheManager(){
+
+        Caffeine<Object, Object> cache = Caffeine.newBuilder()
+            .maximumSize(100)
+            .expireAfterAccess(5, TimeUnit.MINUTES);
+
+        CaffeineCacheManager manager = new CaffeineCacheManager();
+        manager.setCaffeine(cache);
+               
+
+        return manager;
     }
 
 }

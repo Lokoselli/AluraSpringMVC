@@ -1,9 +1,8 @@
 package br.com.casadocodigo.loja.controllers;
 
-import java.math.BigDecimal;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -51,7 +50,7 @@ public class CarrinhoController {
     }
 
     @RequestMapping(value = "/remover/{id}")
-    public ModelAndView remover(Integer id, TipoPreco tipoPreco){
+    public ModelAndView remover(@PathVariable("id") Integer id, TipoPreco tipoPreco){
         carrinho.remover(id, tipoPreco);
 
         return new ModelAndView("redirect:/carrinho");
