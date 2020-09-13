@@ -1,4 +1,8 @@
 FROM gitpod/workspace-mysql
-FROM heroku/heroku
 
 USER root
+
+RUN apt-get update && \
+      apt-get -y install sudo
+      
+RUN sudo snap install --classic heroku
