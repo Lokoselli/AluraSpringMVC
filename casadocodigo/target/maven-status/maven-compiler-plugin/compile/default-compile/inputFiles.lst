@@ -10,10 +10,10 @@
 /workspace/AluraSpringMVC/casadocodigo/src/main/java/br/com/casadocodigo/loja/controllers/PagamentoController.java
 /workspace/AluraSpringMVC/casadocodigo/src/main/java/br/com/casadocodigo/loja/conf/JsonViewResolver.java
 /workspace/AluraSpringMVC/casadocodigo/src/main/java/br/com/casadocodigo/loja/models/DadosPagamento.java
-/workspace/AluraSpringMVC/casadocodigo/src/main/java/br/com/casadocodigo/loja/models/Preco.java
 /workspace/AluraSpringMVC/casadocodigo/src/main/java/br/com/casadocodigo/loja/models/Produto.java
 /workspace/AluraSpringMVC/casadocodigo/src/main/java/br/com/casadocodigo/loja/models/CarrinhoItem.java
+/workspace/AluraSpringMVC/casadocodigo/src/main/java/br/com/casadocodigo/loja/models/Preco.java
 /workspace/AluraSpringMVC/casadocodigo/src/main/java/br/com/casadocodigo/loja/controllers/HomeController.java
 /workspace/AluraSpringMVC/casadocodigo/src/main/java/br/com/casadocodigo/loja/conf/SpringSecurityFilterConfiguration.java
-/workspace/AluraSpringMVC/casadocodigo/src/main/java/br/com/casadocodigo/loja/daos/ProdutoDAO.java
 /workspace/AluraSpringMVC/casadocodigo/src/main/java/br/com/casadocodigo/loja/controllers/ProdutosController.java
+/workspace/AluraSpringMVC/casadocodigo/src/main/java/br/com/casadocodigo/loja/daos/ProdutoDAO.java
