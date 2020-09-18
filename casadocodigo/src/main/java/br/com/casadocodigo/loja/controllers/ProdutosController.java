@@ -66,7 +66,7 @@ public class ProdutosController {
         return new ModelAndView("redirect:/produtos"); 
     }
 
-    @RequestMapping(method=RequestMethod.GET)
+    @RequestMapping(method=RequestMethod.GET, name = "listar")
     public ModelAndView listar() {
         List<Produto> lista = produtoDao.listar();
         ModelAndView modelAndView = new ModelAndView("/produtos/lista");

@@ -23,7 +23,7 @@ public class CarrinhoController {
     @Autowired
     private CarrinhoCompras carrinho;
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET, name = "carrinho")
     public ModelAndView carrinho(){
         ModelAndView modelAndView = new ModelAndView("carrinho/itens");
         return modelAndView;

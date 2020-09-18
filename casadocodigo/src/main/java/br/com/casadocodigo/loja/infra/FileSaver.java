@@ -13,14 +13,11 @@ import org.springframework.web.multipart.MultipartFile;
 @Component
 public class FileSaver {
 
-    @Autowired
-    private HttpServletRequest request;
-
     public String write(String baseFolder, MultipartFile file) {
 
         try {
             
-            String realPath = request.getServletContext().getRealPath("/" + baseFolder);
+            String realPath = "";
             String path = realPath + "/" + file.getOriginalFilename();
             String filePath = baseFolder + "/" + file.getOriginalFilename();
 

@@ -20,7 +20,7 @@ public class HomeController{
     @RequestMapping("/")
     @Cacheable(value = "produtosHome")
     public ModelAndView index(){
-        ModelAndView modelAndView = new ModelAndView("/home");
+        ModelAndView modelAndView = new ModelAndView("home");
 
         List<Produto> produtos = produtoDao.listar();
 

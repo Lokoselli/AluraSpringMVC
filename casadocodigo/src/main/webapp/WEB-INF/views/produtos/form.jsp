@@ -37,7 +37,7 @@
             <a class="nav-link" href="${s:mvcUrl('HC#index').build()}">Home </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="${s:mvcUrl('PC#listar').build()}">Lista Produtos<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="${s:mvcUrl('listar').build()}">Lista Produtos<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
             <a class="nav-link" href="${s:mvcUrl('PC#form').build()}" tabindex="-1">Cria Produto</a>
