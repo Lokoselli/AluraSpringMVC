@@ -20,8 +20,6 @@ public class Usuario implements UserDetails {
     @Id
     private String email;
     private String senha;
-    private String nome;
-
     
 
     @OneToMany(fetch = FetchType.EAGER)
